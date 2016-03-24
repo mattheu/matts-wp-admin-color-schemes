@@ -39,7 +39,7 @@ class MACS_Color_Schemes {
 	 *                    Needed for registering colors-fresh dependency.
 	 */
 	private $colors = array(
-		'matt', 'matt2', 'matt3'
+		'fern', 'matt2', 'matt3'
 	);
 
 	function __construct() {
@@ -54,29 +54,29 @@ class MACS_Color_Schemes {
 		$suffix = is_rtl() ? '-rtl' : '';
 
 		wp_admin_css_color(
-			'matt', __( 'Fern', 'admin_schemes' ),
-			plugins_url( "matt/colors$suffix.css", __FILE__ ),
+			'fern', __( 'Fern', 'admin_schemes' ),
+			plugins_url( "fern/colors$suffix.css", __FILE__ ),
 			array( '#353129', '#484A47', '#c1d973', '#81AFB5' ),
 			array( 'base' => '#ECEBCA', 'focus' => '#c1d973', 'current' => '#c1d973' )
 		);
 
 		wp_admin_css_color(
-			'matt2', __( 'Autumn', 'admin_schemes' ),
-			plugins_url( "matt2/colors$suffix.css", __FILE__ ),
+			'autumn', __( 'Autumn', 'admin_schemes' ),
+			plugins_url( "autumn/colors$suffix.css", __FILE__ ),
 			array( '#52504C', '#65625d', '#cb992f', '#cb2f2f' ),
 			array( 'base' => '#65625d', 'focus' => '#cb992f', 'current' => '#cb992f' )
 		);
 
 		wp_admin_css_color(
-			'matt3', __( 'Crimson', 'admin_schemes' ),
-			plugins_url( "matt3/colors$suffix.css", __FILE__ ),
+			'crimson', __( 'Crimson', 'admin_schemes' ),
+			plugins_url( "crimson/colors$suffix.css", __FILE__ ),
 			array( '#821116', '#9C0D13', '#E8A41E', '#E5E3DE' ),
 			array( 'base' => '#ECEBCA', 'focus' => '#cb992f', 'current' => '#cb992f' )
 		);
 
 		wp_admin_css_color(
-			'matt4', __( 'Deep Sea', 'admin_schemes' ),
-			plugins_url( "matt4/colors$suffix.css", __FILE__ ),
+			'deep-sea', __( 'Deep Sea', 'admin_schemes' ),
+			plugins_url( "deep-sea/colors$suffix.css", __FILE__ ),
 			array( '#0F1F27', '#193441', '#7FAB6F', '#437D9A' ),
 			array( 'base' => '#ECEBCA', 'focus' => '#cb992f', 'current' => '#cb992f' )
 		);
